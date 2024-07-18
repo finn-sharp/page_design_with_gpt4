@@ -10,10 +10,10 @@ function closePopup() {
 
 function navigateTo(page) {
     if (page=='home') {
-        let url = '../index.html'
+        let url = 'index.html'
         window.location.href = url;
     } else {
-        let url = '/code/'+ page + '.html';
+        let url = page + '.html';
         window.location.href = url;
     }
 }
