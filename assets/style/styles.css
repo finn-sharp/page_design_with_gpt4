@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* 예시로 추가된 CSS 속성 */
+    padding-top: 60px; /* HEADER의 높이만큼 여백을 추가 */
+}
+
+header {
+    background-color: #87ceeB;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0; /* 상하 여백 조정 */
+    z-index: 1000; /* 다른 요소들보다 위에 위치하도록 설정 */
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    padding-top: 100px; /* header의 높이만큼 여백 추가 */
+    padding-bottom: 100px; /* header의 높이만큼 여백 추가 */
+
+}
+
+.blog-post {
+    background: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.blog-post .date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.blog-post p {
+    line-height: 1.6;
+}
+
+.read-more {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #87ceeB;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.mySlides {
+    display: none;
+    animation: fadeEffect 3s infinite; /* 이미지가 넘어가는 애니메이션 추가 */
+}
+
+@keyframes fadeEffect {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+}

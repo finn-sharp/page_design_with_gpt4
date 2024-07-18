@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 블로그</title>
+    <link rel="stylesheet" href="assets\style\styles.css">
+</head>
+<body>
+    <header>
+        <h1>여행 블로그</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="navigateTo('home')">홈</a></li>
+                <li><a href="#" onclick="navigateTo('destinations')">여행지</a></li>
+                <li><a href="#" onclick="navigateTo('about')">소개</a></li>
+                <li><a href="#" onclick="navigateTo('contact')">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- 이곳에 페이지 내용이 로드됩니다 -->
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/image/img1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/image/img2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/image/img3.jpg" style="width:100%">
+            </div>
+        </section>
+
+        <section id="home">
+            <section class="blog-post">
+                <h2>전남대학교 정보마루 관람</h2>
+                <p class="date">2024년 7월 18일</p>
+                <p>전남대학교의 정보마루를 구경하며 즐거운 시간을 보냈습니다. 예쁜 인테리어를 감상하며 정보마루의 아름다움을 느낄 수 있었습니다.</p>
+                <button class="read-more" onclick="openPopup('전남대학교 정보마루', '내용입력.')">더 읽기</button>
+            </section>
+            
+            <section class="blog-post">
+                <h2>5.18광장에서 피크닉 체험</h2>
+                <p class="date">2024년 7월 10일</p>
+                <p>해변에서 여유로운 하루를 보냈습니다.넓은 들판에서의 휴식과 캠퍼스의 아름다운 풍경은 잊지 못할 추억이 되었습니다.</p>
+                <button class="read-more" onclick="openPopup('5.18광장에서 피크닉 체험', '광장에서 여유로운 하루를 보냈습니다. 모래사장에서의 휴식과 바다에서의 수영은 잊지 못할 추억이 되었습니다.')">더 읽기</button>
+            </section>
+
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 여행 블로그. 모든 권리 보유.</p>
+    </footer>
+
+    <!-- 팝업 윈도우 -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-content"></p>
+        </div>
+    </div>
+
+    <script src="assets\script\script.js"></script>
+</body>
+</html>
